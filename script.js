@@ -11,7 +11,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  let hChoice = prompt("Make your choice:");
+  let hChoice = prompt("Make your choice:").toLowerCase();
   let text;
   if (hChoice == null || hChoice == "") {
     return (text = "Invalid Input");
@@ -22,8 +22,12 @@ function getHumanChoice() {
   }
 }
 
-// function playRound(playerSelection, computerSelection) {
-//   if (playerSelection == computerSelection) {
-//
-//   }
-//}
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+  const humanChoice = getHumanChoice();
+  const computerChoice = getComputerChoice();
+}
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
